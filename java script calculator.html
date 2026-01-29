@@ -1,0 +1,53 @@
+<html>
+    <script>
+        class calculator{
+            constructor (num1,num2){
+                this.num1=num1
+                this.num2=num2
+
+            }
+            addition(){
+                document.write(this.num1+this.num2);
+
+            }
+            substraction(){
+                document.write(this.num1-this.num2);
+            }
+            multiplication(){
+                document.write(this.num1*this.num2);
+            }
+            division(){
+                document.write(this.num1/this.num2);
+
+            }
+        }
+x=Number(prompt("Enter first number:"));
+y=Number(prompt("Enter second number:"));
+operator=prompt("Enter your operator:");
+
+
+obj1 =new calculator(x,y);
+if (operator=="+"){
+    obj1.addition()
+}
+else if(operator=="-"){
+    obj1.substraction()
+}
+else if(operator=="*"){
+    obj1.multiplication()
+}
+else if(operator=="/"){
+    obj1.division()
+
+}
+else{
+    document.write("invalid");
+}
+
+        
+
+
+
+
+    </script>
+</html>
